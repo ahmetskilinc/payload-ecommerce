@@ -20,7 +20,7 @@
     "@octokit/rest": "^21.0.2",
     "@payloadcms/db-mongodb": "3.13.0",
     "@payloadcms/email-nodemailer": "3.13.0",
-    "@payloadcms/next": "3.13.0",
+    "@payloadcms/next": "3.44.0",
     "@payloadcms/plugin-stripe": "3.13.0",
     "@payloadcms/richtext-lexical": "3.13.0",
     "@payloadcms/storage-s3": "^3.13.0",
