@@ -28,7 +28,7 @@ importers:
         version: 3.13.0(@types/react@19.0.2)(monaco-editor@0.52.2)(next@15.1.3(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.77.4))(payload@3.13.0(graphql@16.10.0)(monaco-editor@0.52.2)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.7.2))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.7.2)
       '@payloadcms/richtext-lexical':
         specifier: 3.13.0
-        version: 3.13.0(fifkxnovm4lfgwxbminiku4otm)
+        version: 3.13.0(dc89ed17c7d0c760de95f7c2e9a97a44)
       '@payloadcms/storage-s3':
         specifier: ^3.13.0
         version: 3.13.0(payload@3.13.0(graphql@16.10.0)(monaco-editor@0.52.2)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.7.2))
@@ -102,8 +102,8 @@ importers:
         specifier: ^0.4.4
         version: 0.4.4(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       nodemailer:
-        specifier: 6.9.16
-        version: 6.9.16
+        specifier: 7.0.7
+        version: 7.0.7
       payload:
         specifier: 3.13.0
         version: 3.13.0(graphql@16.10.0)(monaco-editor@0.52.2)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.7.2)
@@ -387,6 +387,10 @@ packages:
 
   '@babel/runtime@7.26.0':
     resolution: {integrity: sha512-FDSOghenHTiToteC/QRlv2q3DhPZ/oOXTBoirfWNx1Cx3TMVcGWQtMMmQcSvb/JjpNeGzx8Pq/b4fKEJuWm1sw==}
+    engines: {node: '>=6.9.0'}
+
+  '@babel/runtime@7.28.4':
+    resolution: {integrity: sha512-Q/N6JNWvIvPnLDvjlE1OUBLPQHH6l3CltCEsHIujp45zQUSSh8K+gHnaEX45yAT1nyngnINhvWtzN+Nb9D8RAQ==}
     engines: {node: '>=6.9.0'}
 
   '@babel/template@7.25.9':
@@ -2063,6 +2067,7 @@ packages:
   bson@6.10.1:
     resolution: {integrity: sha512-P92xmHDQjSKPLHqFxefqMxASNq/aWJMEZugpCjf+AF/pgcUpMMQCg7t7+ewko0/u8AapvF3luf/FoehddEK+sA==}
     engines: {node: '>=16.20.1'}
+    deprecated: a critical bug affecting only useBigInt64=true deserialization usage is fixed in bson@6.10.3
 
   buffer@5.6.0:
     resolution: {integrity: sha512-/gDYp/UtU0eA1ys8bOs9J6a+E/KWIY+DZ+Q2WESNUA0jFRsJOc0SNUO6xJ5SGA1xueg3NL65W6s+NY5l9cunuw==}
@@ -3028,8 +3033,8 @@ packages:
   lexical@0.20.0:
     resolution: {integrity: sha512-lJEHLFACXqRf3u/VlIOu9T7MJ51O4la92uOBwiS9Sx+juDK3Nrru5Vgl1aUirV1qK8XEM3h6Org2HcrsrzZ3ZA==}
 
-  lib0@0.2.99:
-    resolution: {integrity: sha512-vwztYuUf1uf/1zQxfzRfO5yzfNKhTtgOByCruuiQQxWQXnPb8Itaube5ylofcV0oM0aKal9Mv+S1s1Ky0UYP1w==}
+  lib0@0.2.114:
+    resolution: {integrity: sha512-gcxmNFzA4hv8UYi8j43uPlQ7CGcyMJ2KQb5kZASw6SnAKAf10hK12i2fjrS3Cl/ugZa5Ui6WwIu1/6MIXiHttQ==}
     engines: {node: '>=16'}
     hasBin: true
 
@@ -3052,6 +3057,7 @@ packages:
 
   lodash.get@4.4.2:
     resolution: {integrity: sha512-z+Uw/vLuy6gQe8cfaFWD7p0wVv8fJl3mbzXh33RS+0oW2wvUqiRXiQ69gLWSLpgB5/6sU+r6BlQR0MBILadqTQ==}
+    deprecated: This package is deprecated. Use the optional chaining (?.) operator instead.
 
   lodash.isplainobject@4.0.6:
     resolution: {integrity: sha512-oSXzaWypCMHkPC3NvBEaPHf0KsA5mvPrOPgQWDsbg8n7orZ290M0BmC/jgRZ4vcJ6DTAhjrsSYgdsW/F+MFOBA==}
@@ -3327,8 +3333,8 @@ packages:
     resolution: {integrity: sha512-qtoKfGFhvIFW5kLfrkw2R6Nm6Ur4LNUMykyqu6n9BRKJuyQrqEGwdXXUAbwWEKt33dlWUGXb7rzmJP/p4+O+CA==}
     engines: {node: '>=6.0.0'}
 
-  nodemailer@6.9.16:
-    resolution: {integrity: sha512-psAuZdTIRN08HKVd/E8ObdV6NO7NTBY3KsC30F7M4H1OnmLCUNaS56FpYxyb26zWLSyYF9Ozch9KYHhHegsiOQ==}
+  nodemailer@7.0.7:
+    resolution: {integrity: sha512-jGOaRznodf62TVzdyhKt/f1Q/c3kYynk8629sgJHpRzGZj01ezbgMMWJSAjHADcwTKxco3B68/R+KHJY2T5BaA==}
     engines: {node: '>=6.0.0'}
 
   normalize-path@3.0.0:
@@ -3605,8 +3611,8 @@ packages:
     engines: {node: '>=14'}
     hasBin: true
 
-  prismjs@1.29.0:
-    resolution: {integrity: sha512-Kx/1w86q/epKcmte75LNrEoT+lX8pBpavuAbvJWRXar7Hz8jrtF+e3vY751p0R8H9HdArwaCTNDDzHg/ScJK1Q==}
+  prismjs@1.30.0:
+    resolution: {integrity: sha512-DEvV2ZF2r2/63V+tK8hQvrR2ZGn10srHbXviTlcv7Kpzw8jWiNTqbVgjO3IY8RxrrOUF8VPMQQFysYYYv0YZxw==}
     engines: {node: '>=6'}
 
   process-nextick-args@2.0.1:
@@ -4880,6 +4886,8 @@ snapshots:
     dependencies:
       regenerator-runtime: 0.14.1
 
+  '@babel/runtime@7.28.4': {}
+
   '@babel/template@7.25.9':
     dependencies:
       '@babel/code-frame': 7.26.2
@@ -5295,7 +5303,7 @@ snapshots:
     dependencies:
       '@lexical/utils': 0.20.0
       lexical: 0.20.0
-      prismjs: 1.29.0
+      prismjs: 1.30.0
 
   '@lexical/devtools-core@0.20.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
     dependencies:
@@ -5641,7 +5649,7 @@ snapshots:
       - supports-color
       - typescript
 
-  '@payloadcms/richtext-lexical@3.13.0(fifkxnovm4lfgwxbminiku4otm)':
+  '@payloadcms/richtext-lexical@3.13.0(dc89ed17c7d0c760de95f7c2e9a97a44)':
     dependencies:
       '@faceless-ui/modal': 3.0.0-beta.2(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       '@faceless-ui/scroll-info': 2.0.0-beta.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
@@ -7938,7 +7946,7 @@ snapshots:
 
   lexical@0.20.0: {}
 
-  lib0@0.2.99:
+  lib0@0.2.114:
     dependencies:
       isomorphic.js: 0.2.5
 
@@ -8339,7 +8347,7 @@ snapshots:
 
   nodemailer@6.9.10: {}
 
-  nodemailer@6.9.16: {}
+  nodemailer@7.0.7: {}
 
   normalize-path@3.0.0: {}
 
@@ -8601,7 +8609,7 @@ snapshots:
 
   prettier@3.4.2: {}
 
-  prismjs@1.29.0: {}
+  prismjs@1.30.0: {}
 
   process-nextick-args@2.0.1: {}
 
@@ -8669,7 +8677,7 @@ snapshots:
 
   react-error-boundary@3.1.4(react@19.0.0):
     dependencies:
-      '@babel/runtime': 7.26.0
+      '@babel/runtime': 7.28.4
       react: 19.0.0
 
   react-error-boundary@4.1.2(react@19.0.0):
@@ -9411,7 +9419,7 @@ snapshots:
 
   yjs@13.6.20:
     dependencies:
-      lib0: 0.2.99
+      lib0: 0.2.114
 
   yocto-queue@0.1.0: {}
 
